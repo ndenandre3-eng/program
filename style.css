@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Judul */
+.judul {
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Paragraf */
+.paragraf {
+    color: black;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 30px;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Tabel */
+.tabel {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+
+.tabel td {
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabel tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Box + Transition */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 50px auto;
+    transition: all 1s ease;
+}
+
+.box:hover {
+    background-color: blue;
+    transform: rotate(180deg) translateX(100px);
+}
