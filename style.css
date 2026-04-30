@@ -1,33 +1,49 @@
+/* BODY */
 body {
     font-family: Arial, sans-serif;
+    background-color: #eee;
+    margin: 0;
 }
 
-/* Judul */
-.judul {
-    color: blue;
+/* HEADER RAINBOW */
+.header {
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 28px;
+    padding: 20px;
+    color: white;
     font-weight: bold;
+    font-size: 24px;
+
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 1400% 1400%;
+    animation: rainbowBG 8s ease infinite;
 }
 
-/* Paragraf */
+/* ANIMASI RAINBOW */
+@keyframes rainbowBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* PARAGRAF */
 .paragraf {
-    color: black;
-    line-height: 25px;
+    margin: 20px;
     text-align: justify;
     text-indent: 30px;
-    font-family: "Times New Roman", serif;
-    font-size: 16px;
+    line-height: 25px;
     font-style: italic;
 }
 
-/* Tabel */
+/* JUDUL TABEL */
+.judul-tabel {
+    text-align: center;
+}
+
+/* TABEL */
 .tabel {
+    margin: auto;
     border-collapse: collapse;
     width: 50%;
-    margin: auto;
 }
 
 .tabel td {
@@ -40,16 +56,44 @@ body {
     background-color: #f2f2f2;
 }
 
-/* Box + Transition */
+/* BOX RAINBOW */
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    width: 120px;
+    height: 120px;
     margin: 50px auto;
-    transition: all 1s ease;
+
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+
+    animation: rainbowMove 5s linear infinite;
+    transition: transform 1s;
 }
 
+/* ANIMASI BOX */
+@keyframes rainbowMove {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+}
+
+/* HOVER EFFECT */
 .box:hover {
-    background-color: blue;
-    transform: rotate(180deg) translateX(100px);
+    transform: rotate(180deg) scale(1.2);
+}
+
+/* TEXT INFO */
+.info {
+    text-align: center;
+    color: blue;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+
+    background: linear-gradient(270deg, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 1400% 1400%;
+    animation: rainbowBG 8s ease infinite;
 }
