@@ -13,9 +13,9 @@ body {
     font-weight: bold;
     font-size: 24px;
 
-    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, black, white );
     background-size: 1400% 1400%;
-    animation: rainbowBG 8s ease infinite;
+    animation: rainbowBG 2s ease infinite;
 }
 
 /* ANIMASI RAINBOW */
